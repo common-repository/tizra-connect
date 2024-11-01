@@ -1,0 +1,127 @@
+/**
+ * Tizra Connect
+ */
+
+/**
+ * Tizra Connect Flexbox Row & Tizra Connect Rows
+ */
+.tizra-connect-flex {
+	width: 100%;
+	margin: auto;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-moz-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	-moz-align-content: flex-start;
+	-ms-align-content: flex-start;
+	-webkit-align-content: flex-start;
+	align-content: flex-start;
+	-ms-flex-pack: start;
+
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Flexbox does not like different types of displays on pseudo elements so we'll hide :before and :after elements to attempt to add better support across themes */
+.tizra-connect-flex:before, .tizra-connect-flex:after {
+	display: none;
+}
+
+.tizra-connect-flex .tizra-connect-title {
+	width: 100%;
+}
+
+/**
+ * Tizra Connect Flexbox Columns
+ */
+.tizra-connect-flex .tizra-connect-col {
+	width: 100%;
+	padding: 0 1em;
+	position: relative;
+
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.tizra-connect-flex-1-columns .tizra-connect-col {
+	width: 100%;
+}
+
+.tizra-connect-flex-2-columns .tizra-connect-col {
+	width: 50%;
+}
+
+.tizra-connect-flex-3-columns .tizra-connect-col {
+	width: 33.333%;
+}
+
+.tizra-connect-flex-4-columns .tizra-connect-col {
+	width: 25%;
+}
+
+.tizra-connect-flex-5-columns .tizra-connect-col {
+	width: 20%;
+}
+
+.tizra-connect-flex-6-columns .tizra-connect-col {
+	width: 16.6665%;
+}
+
+/**
+ * Tizra Connect Elements
+ */
+.tizra-connect {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.tizra-connect .tizra-connect-cover-image img {
+	max-height: 200px
+}
+
+/* Responsive Structure */
+@media only screen and (max-width : 768px) {
+	.tizra-connect-flex-2-columns .tizra-connect-col {
+		width: 100%;
+	}
+
+	.tizra-connect-flex-3-columns .tizra-connect-col{
+		width: 100%;
+	}
+
+	.tizra-connect-flex-4-columns .tizra-connect-col {
+		width: 50%;
+	}
+
+	.tizra-connect-flex-5-columns .tizra-connect-col {
+		width: 33%;
+	}
+
+	.tizra-connect-flex-6-columns .tizra-connect-col {
+		width: 33%;
+	}
+}
+
+@media only screen and (max-width : 568px) {
+	.tizra-connect-flex-4-columns .tizra-connect-col {
+		width: 100%;
+	}
+
+	.tizra-connect-flex-5-columns .tizra-connect-col {
+		width: 100%;
+	}
+
+	.tizra-connect-flex-6-columns .tizra-connect-col {
+		width: 100%;
+	}
+}

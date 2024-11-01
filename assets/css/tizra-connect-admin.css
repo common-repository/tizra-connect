@@ -1,0 +1,214 @@
+/**
+ * Tizra Connect Admin
+ */
+
+/**
+ * General
+ */
+
+/* Clearing Elements */
+.tizra-connect-clear {
+	clear: both;
+}
+
+.tizra-connect-cf {
+	zoom: 1;
+}
+
+.tizra-connect-cf:before,
+.tizra-connect-cf:after {
+	content: '';
+	display: table;
+}
+
+.tizra-connect-cf:after {
+	clear: both;
+}
+
+
+/**
+ * Tizra Connect Options
+ */
+.about-wrap.tizra-connect-wrap .notice,
+.about-wrap.tizra-connect-wrap div.error,
+.about-wrap.tizra-connect-wrap div.updated {
+	margin-top: 1em;
+	display: block !important;
+}
+
+.about-wrap.tizra-connect-wrap h2 {
+	margin-top: 1em;
+	text-align: left;
+}
+
+.about-wrap.tizra-connect-wrap .description {
+	padding-top: 0.5em;
+	display: inline-block;
+	line-height: 1.8em;
+}
+
+.about-wrap.tizra-connect-wrap strong code {
+	font-weight: bold;
+}
+
+/* Checkboxes */
+.tizra-connect-toggle-checkbox input[type=checkbox] {
+	display: none;
+}
+
+.tizra-connect-toggle-checkbox {
+	width: 112px;
+	height: 26px;
+	background: #fff;
+	margin: 0 0 10px;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	position: relative;
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.5);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.tizra-connect-toggle-checkbox:before {
+	content: attr(data-label-left);
+	width: 50%;
+	padding: 0;
+
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #fff;
+	background: #0074a2;
+
+	position: absolute;
+	left: 0;
+	z-index: 0;
+
+	border-radius: 4px 0 0 4px;
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.5);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.5);
+}
+
+.tizra-connect-toggle-checkbox:after {
+	content: attr(data-label-right);
+	width: 50%;
+	font-size: 14px;
+	line-height: 26px;
+	color: #666;
+	position: absolute;
+	right: 0;
+	z-index: 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.tizra-connect-toggle-checkbox label {
+	display: block;
+	width: 56px;
+	height: 26px;
+
+	-webkit-border-radius: 4px 2px 2px 4px;
+	-moz-border-radius: 4px 2px 2px 4px;
+	-ms-border-radius: 4px 2px 2px 4px;
+	border-radius: 4px 2px 2px 4px;
+
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	transition: all .25s ease;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	text-align: center;
+	line-height: 21px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #777;
+	text-shadow: 1px 1px 0 #fff;
+
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+	background: #fffffc;
+}
+
+.tizra-connect-toggle-checkbox input[type=checkbox]:checked + label {
+	left: 56px;
+
+	-webkit-border-radius: 2px 4px 4px 2px;
+	-moz-border-radius: 2px 4px 4px 2px;
+	-ms-border-radius: 2px 4px 4px 2px;
+	border-radius: 2px 4px 4px 2px;
+}
+
+.tizra-account-status {
+	font-weight: bold;
+}
+
+.tizra-account-status.valid {
+	color: #46b450;
+}
+
+.tizra-account-status.invalid {
+	color: #dc3232;
+}
+
+
+/**
+ * Tizra Connect Shortcode Modal
+ */
+.tizra-connect-shortcode-ui-visible #TB_ajaxContent {
+	min-height: 86% !important;
+	padding: 2px 15px;
+}
+
+.tizra-connect-shortcode-ui-visible .tizra-connect-shortcode-wrapper {
+	padding-bottom: 1rem;
+}
+
+#tizra-connect-shortcode-wrapper-container {
+	display: none;
+}
+
+.tizra-connect-shortcode-ui-visible #tizra-connect-shortcode-actions {
+	padding: 8px 15px;
+	background: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.tizra-connect-shortcode-ui-visible #tizra-connect-shortcode-actions .tizra-connect-spinner.spinner {
+	width: 20px;
+	min-height: 0;
+}
+
+.tizra-connect-shortcode-ui-visible #tizra-connect-shortcode-actions .tizra-connect-spinner.spinner.loading.is-active {
+	display: inline-block;
+}
+
+#tizra-connect-shortcode-content-wrapper {
+	margin: 1em 0;
+	padding: 1em;
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.tizra-connect-shortcode-setting {
+	margin: 0;
+}
